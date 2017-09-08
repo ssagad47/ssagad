@@ -1,5 +1,6 @@
 # [ADVISOR-FALCON](https://t.me/XxMTxX)
  
+ 
 ☺️🚩 كيفيه تنصيب سورس ديف فالكون
  توكن ومابي اخطاء وعربي وtg جديد
 〰➖〰➖〰➖〰➖〰
@@ -8,7 +9,7 @@
 redis-server
 
 📍 بـعـديـن خـلـي / وانتر
-git clone 
+git clone https://github.com/DevFalcon/Falcon.git
 〰➖〰➖〰➖〰➖〰
 📍وراهه خـلـي هذا كود / وانتر
 
