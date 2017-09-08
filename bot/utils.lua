@@ -518,13 +518,13 @@ if not is_gbanned(user_id) then
     local data = load_data(_config.moderation.data)
     local i = 1
   if not data[tostring(chat_id)] then
-    return '_📬┋المجموعه غير مفعله ✖️_'
+    return '*الحمايـه ليست مفعـله🤖✖️*'
   end
   -- determine if table is empty
   if next(data[tostring(chat_id)]['banned']) == nil then --fix way
-					return "_⚙️┋لايوجد محظورين في المجموعه_"
+					return "*لا يـوجد محظورين هنـا🚷❌*"
 				end
-   message = '_⚙️┋قائمه المحظورين ⬇️ :_\n\n'
+   message = '*قائمه المحظـورين🚷📝 : *\n\n'
   for k,v in pairs(data[tostring(chat_id)]['banned']) do
     message = message ..i.. '- '..v..' [' ..k.. '] \n'
    i = i + 1
@@ -536,13 +536,13 @@ end
     local data = load_data(_config.moderation.data)
     local i = 1
   if not data[tostring(chat_id)] then
-    return '_📬┋المجموعه غير مفعله ✖️_'
+    return '*الحمايـه ليست مفعـله🤖✖️*'
   end
   -- determine if table is empty
   if next(data[tostring(chat_id)]['is_silent_users']) == nil then --fix way
-					return "_⚙️┋لايوجد مكتومين في المجموعه_"
+					return "*لا يـوجد مكتـومين هنـا🔇❌*"
 				end
-   message = '_⚙️┋قائمه المكتومين ⬇️ :_\n\n'
+   message = '*قائمه المكتومـين🔇📝 :*\n\n'
   for k,v in pairs(data[tostring(chat_id)]['is_silent_users']) do
     message = message ..i.. '- '..v..' [' ..k.. '] \n'
    i = i + 1
@@ -554,7 +554,7 @@ function whitelist(chat_id)
     local data = load_data(_config.moderation.data)
     local i = 1
   if not data[tostring(chat_id)] then
-    return '_📬┋المجموعه غير مفعله ✖️_'
+    return '*الحمايـه ليست مفعـله🤖✖️*'
   end
   if not data[tostring(chat_id)]['whitelist'] then
     data[tostring(chat_id)]['whitelist'] = {}
