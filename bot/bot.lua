@@ -1,8 +1,8 @@
 package.path = package.path..';.luarocks/share/lua/5.2/?.lua;.luarocks/share/lua/5.2/?/init.lua'
 package.cpath = package.cpath..';.luarocks/lib/lua/5.2/?.so'
-bot_token = "TOKEN-BOT-BRWUEN" -- توكن بوتك --BRWUEN
+bot_token = "359081803:AAE2j_jtBN_6yYYERaN1IyOa60uDxWb0Sfk" -- توكن بوتك 
 send_api = "https://api.telegram.org/bot"..bot_token
-sudo_id = 310233496 -- ايدي المطور --BRWUEN
+sudo_id = 123841760 -- ايدي المطور 
 http = require('socket.http')
 https = require('ssl.https')
 URL = require('socket.url')
@@ -22,7 +22,7 @@ function bot_run()
 		bot = send_req(send_api.."/getMe")
 	end
 	bot = bot.result
-	local runlog = bot.first_name.." [@"..bot.username.."]\nتم عمل رن للبوت الان : "..os.date("%F - %H:%M:%S")
+	local runlog = bot.first_name.." [@"..bot.username.."]\nتـم تشغـيل البـوت✔️ : "..os.date("%F - %H:%M:%S")
 	print(runlog)
 	send_msg(sudo_id, runlog)
 	last_update = last_update or 0
@@ -171,37 +171,24 @@ function create_config( )
 	io.write('\n\27[1;33m>> Input your Telegram ID for set Sudo :\27[0;39;49m')
 	local SUDO = tonumber(io.read())
 if not tostring(SUDO):match('%d+') then
-    SUDO = 310233496 -- ايدي المطور --BRWUEN
+    SUDO = 123841760 -- ايدي المطور 
   end
   -- A simple config with basic plugins and ourselves as privileged user
   config = {
     enabled_plugins = {
    "plugins",
     "msg_checks",
-    "groupmanager",
+    "supermang",
     "tools",
     "banhammer",
-    "BRWUEN"
+    "replay",
     },
-    sudo_users = {310233496, SUDO},--ايدي المطور --BRWUEN
+    sudo_users = {123841760, SUDO},--ايدي المطور 
     master_id = SUDO, 
     admins = {},
     disabled_channels = {},
     moderation = {data = './data/moderation.json'},
-    info_text = [[*》BRWUEN Manager V1.0*
-`》An advanced administration bot based on` *BDMessenger*
-
-》[BRWUEN github](https://github.com/0BRWUEN0/BRWUEN-API-TOKEN)
-
-*》Admins :*
-*》Founder & Developer :* [BRWUEN](Telegram.Me/BRWUEN)
-
-*》Special thanks to :*
-`BRWUEN Team Members`
-
-*》Our channel :*
-》[BRWUEN Team](Telegram.Me/vip_api)
-]],
+    info_text = [[info_text = "*سورس فالكـون🚩\n🚩 الاصدار - v1\nالمطـورين🚩🕵- (@Sudo_Sky)\n(@Yi_i5)\nقناة السـورس🚩📡 - (@XxMTXx)\n🚩  - رابط الكيث هوب* []", ]], 
   }
   serialize_to_file(config, './data/config.lua')
   print('saved config into ./data/config.lua')
