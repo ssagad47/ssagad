@@ -23,25 +23,22 @@ install() {
 }
 
 function print_logo() {
-	green "                                                                           "
-	green "   ____  ______        ___   _ _____ _   _ 
-             | __ )|  _ \ \      / / | | | ____| \ | |
-             |  _ \| |_) \ \ /\ / /| | | |  _| |  \| |
-             | |_) |  _ < \ V  V / | |_| | |___| |\  |
-             |____/|_| \_\ \_/\_/   \___/|_____|_| \_|                                "
-             
-    green "                                                                           "
-	green "                                                                           "
+	green " _____ _    _     ____ ___  _   _ "
+	green "|  ___/ \  | |   / ___/ _ \| \ | |"  
+    green "| |_ / _ \ | |  | |  | | | |  \| |"
+	green "|  _/ ___ \| |__| |__| |_| | |\  |"
+	green "|_|/_/   \_\_____\____\___/|_| \_|"
 	echo -e "\n\e[0m"
 }
 
 function logo_play() {
     declare -A txtlogo
     seconds="0.010"
-    txtlogo[1]="| __ )|  _ \ \      / / | | | ____| \ | |"
-    txtlogo[2]="|  _ \| |_) \ \ /\ / /| | | |  _| |  \| |"
-    txtlogo[3]="| |_) |  _ < \ V  V / | |_| | |___| |\  |"
-    txtlogo[4]="|____/|_| \_\ \_/\_/   \___/|_____|_| \_|"
+txtlogo[1]=" _____ _    _     ____ ___  _   _ "
+txtlogo[2]="|  ___/ \  | |   / ___/ _ \| \ | |"
+txtlogo[3]="| |_ / _ \ | |  | |  | | | |  \| |"
+txtlogo[4]="|  _/ ___ \| |__| |__| |_| | |\  |"
+txtlogo[5]="|_|/_/   \_\_____\____\___/|_| \_|"
     printf "\e[31m\t"
     for i in ${!txtlogo[@]}; do
         for x in `seq 0 ${#txtlogo[$i]}`; do
@@ -54,14 +51,14 @@ function logo_play() {
 	echo -e "\e[0m"
 }
 
-function BRWUENteam() {
+function ADVISOR() {
 	echo -e "\e[0m"
 	green "     >>>>                       We Are Not Attacker                             "
-	green "     >>>>                       We Are Not Alliance                             "
+	white "     >>>>                       We Are Not Alliance                             "
 	white "     >>>>                       We Are Programmer                               "
 	white "     >>>>                       We Are The Best                                 "
-	red   "     >>>>                       We Are Family                                   "
-	red   "     >>>>                       @vip_api                                    "
+	white   "     >>>>                       We Are Family                                   "
+	green   "     >>>>                       @XxMTxX                                    "
 	echo -e "\e[0m"
 }
 
@@ -80,18 +77,18 @@ update() {
 
 if [ "$1" = "install" ]; then
 	print_logo
-	BRWUENteam
+	ADVISOR
 	logo_play
 	install
 elif [ "$1" = "update" ]; then
 	logo_play
-	BRWUENteam
+	ADVISOR
 	update
 	exit 1
 else
 	print_logo
-	BRWUENteam
+	ADVISOR
 	logo_play
-	green "BRWUEN Manager Bot running..."
+	green "FALCON Manager Bot running..."
 	lua ./bot/bot.lua
 fi
