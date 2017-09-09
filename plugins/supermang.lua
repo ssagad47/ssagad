@@ -168,7 +168,7 @@ end
 
 local lock_link = data[tostring(target)]["settings"]["lock_link"] 
 if lock_link == "yes" then
- return "*لروابـط بالفعـل مقفـله هنـا🔐✔️*"
+ return "*الروابـط بالفعـل مقفـله هنـا🔐✔️*"
 else
 data[tostring(target)]["settings"]["lock_link"] = "yes"
 save_data(_config.moderation.data, data) 
