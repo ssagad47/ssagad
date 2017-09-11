@@ -105,7 +105,7 @@ end
 
 local function run(msg, matches)
     local data = load_data(_config.moderation.data)
-   if matches[1] == "قائمه المطورين" and is_sudo(msg) then
+   if matches[1] == "المطورين" and is_sudo(msg) then
     return sudolist(msg)
    end
   if tonumber(msg.from.id) == tonumber(sudo_id) then
@@ -420,8 +420,8 @@ local hash = 'AutoLeaveBot'
 🚩| ثبت - الغاء تثبيت - فالكون
 🔹- - - - - - - - - - - - - - -🔹    
 🚩| ارسل - الاوامر لعرضها
-- - - - - - - - -
-CH - @XxMTxX*]]
+- - - - - - - - -*
+CH - @XxMTxX]]
     return text
   end
 end
@@ -432,7 +432,7 @@ return {
     "^(تنزيل مطور)$",
     "^(رفع مطور) (.*)$",
     "^(تنزيل مطور) (.*)$",
-    "^(قائمه المطورين)$",
+    "^(المطورين)$",
     "^(رفع مشرف)$",
     "^(تنزيل مشرف)$",
     "^(رفع مشرف) (.*)$",
