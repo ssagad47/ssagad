@@ -181,7 +181,7 @@ if not tostring(SUDO):match('%d+') then
     "supermang",
     "tools",
     "banhammer",
-    "replay",
+    "rebot",
     },
     sudo_users = {123841760,here},--ايدي المطور 
     master_id = SUDO, 
