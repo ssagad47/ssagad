@@ -899,7 +899,7 @@ return "*لاتبعبص🐸💔*"
 end
 local data = load_data(_config.moderation.data)
 local mutes = data[tostring(target)]["mutes"] 
-text = "*🚩اعدادات الوسائط🌅*\n*🔹- - - - - - - - - - - - - - - - - -🔹*\n*🚩|الكل : * *"..mutes.mute_all.."*\n*🚩|المتحركه :* *"..mutes.mute_gif.."*\n*🚩|الدردشه :* *"..mutes.mute_text.."*\n*🚩|الصور :* *"..mutes.mute_photo.."*\n*🚩|الفيديو :* *"..mutes.mute_video.."*\n*🚩|الصوت :* *"..mutes.mute_audio.."*\n*🚩|الاغاني :* *"..mutes.mute_voice.."*\n*🚩|الملصقات :* *"..mutes.mute_sticker.."*\n*🚩|الجهات :* *"..mutes.mute_contact.."*\n*🚩|التوجيه :* *"..mutes.mute_forward.."*\n*🚩|الموقع :* *"..mutes.mute_location.."*\n*🚩|الملفات :* *"..mutes.mute_document.."*\n*🚩|الانلاين :* *"..mutes.mute_tgservice.."*\n*🔹- - - - - - - - - - - - - - - - - -🔹*\n📡 CH -@Ch_Advisor"
+text = "*🚩اعدادات الوسائط🌅*\n*🔹- - - - - - - - - - - - - - - - - -🔹*\n*🚩|الكل : * *"..mutes.mute_all.."*\n*🚩|المتحركه :* *"..mutes.mute_gif.."*\n*🚩|الدردشه :* *"..mutes.mute_text.."*\n*🚩|الصور :* *"..mutes.mute_photo.."*\n*🚩|الفيديو :* *"..mutes.mute_video.."*\n*🚩|الصوت :* *"..mutes.mute_audio.."*\n*🚩|الاغاني :* *"..mutes.mute_voice.."*\n*🚩|الملصقات :* *"..mutes.mute_sticker.."*\n*🚩|الجهات :* *"..mutes.mute_contact.."*\n*🚩|التوجيه :* *"..mutes.mute_forward.."*\n*🚩|الموقع :* *"..mutes.mute_location.."*\n*🚩|الملفات :* *"..mutes.mute_document.."*\n*🚩|الانلاين :* *"..mutes.mute_tgservice.."*\n*🔹- - - - - - - - - - - - - - - - - -🔹*\n📡 CH -@XxMTxX"
 text = string.gsub(text, 'yes', '✔️')
 text = string.gsub(text, 'no', '✖️')
  return text
@@ -1001,7 +1001,7 @@ if matches[1] == "ايدي" then
    if not matches[2] and not msg.reply_to_message then
 local status = getUserProfilePhotos(msg.from.id, 0, 0)
    if status.result.total_count ~= 0 then
-	sendPhotoById(msg.to.id, status.result.photos[1][1].file_id, msg.id, '🚩|ايدي المجموعه : '..msg.to.id..'\n🚩|ايديك : '..msg.from.id.. "\n🔹- - - - - - - - - - - - - - - - -🔹\n📡 ᴄʜ - @Ch_Advisor")
+	sendPhotoById(msg.to.id, status.result.photos[1][1].file_id, msg.id, '🚩|ايدي المجموعه : '..msg.to.id..'\n🚩|ايديك : '..msg.from.id.. "\n🔹- - - - - - - - - - - - - - - - -🔹\n📡 ᴄʜ - @XxMTxX")
 	else
    return "*🚩|ايدي المجموعه :*"..tostring(msg.to.id).."*🚩|ايديك :*"..tostring(msg.from.id)..""
    end
@@ -1516,7 +1516,7 @@ end
   end
   if matches[1] == "القوانين" then
  if not data[tostring(target)]['rules'] then
-     rules = "*🚩 القوانيـن :\n\n🚩|عـدم عمـل توجيه للمجموعه\n🚩|عـدم الشتـم والغلـط\n🚩|عـدم التجاوز بالكلام\n🚩|لا تطلب الادمنيه المتفاعل يرفع ادمن\n🚩|عـدم ارسـال الروابـط هنـا*\n*🔹- - - - - - - - - - - - - - - - -🔹*\n CH - @Ch_Advisor"
+     rules = "*🚩 القوانيـن :\n\n🚩|عـدم عمـل توجيه للمجموعه\n🚩|عـدم الشتـم والغلـط\n🚩|عـدم التجاوز بالكلام\n🚩|لا تطلب الادمنيه المتفاعل يرفع ادمن\n🚩|عـدم ارسـال الروابـط هنـا*\n*🔹- - - - - - - - - - - - - - - - -🔹*\n CH - @XxMTxX"
         else
      rules = "*🚩|القوانين :*\n\n"..data[tostring(target)]['rules']
       end
