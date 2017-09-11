@@ -508,7 +508,7 @@ if not is_mod(msg) then
 end
 local data = load_data(_config.moderation.data)
 local settings = data[tostring(target)]["settings"] 
-text = "*🚩اعدادات المجموعه🛠*\n*🔹- - - - - - - - - - - -  - - - - -🔹*\n*🚩|التعديل :* *"..settings.lock_edit.."*\n*🚩|الروابط :* *"..settings.lock_link.."*\n*🚩|التاك :* *"..settings.lock_tag.."*\n*🚩|الدخول :* *"..settings.lock_join.."*\n*🚩|التكرار :* *"..settings.flood.."*\n*🚩|الكلايش :* *"..settings.lock_spam.."*\n*🚩|الشارحه :* *"..settings.lock_mention.."*\n*🚩|العربيه :* *"..settings.lock_arabic.."*\n*🚩|الويب :* *"..settings.lock_webpage.."*\n*🚩|الماركدون :* *"..settings.lock_markdown.."*\n*🚩|الترحيب :* *"..settings.welcome.."*\n*🚩|التثبيت :* *"..settings.lock_pin.."*\n*🚩|البوتات :* *"..settings.lock_bots.."*\n*🚩|عدد التكرار :* *"..settings.num_msg_max.."*\n*🚩|عدد التكرار بالوقت :* *"..settings.set_char.."*\n*🚩|عدد التكرار بالاحرف :* *"..settings.time_check.."*\n*🔹- - - - - - - - - - - -  - - - - -🔹*\nCH📡 - @XxMTxX"
+text = "*🚩اعدادات المجموعه🛠*\n*🔹- - - - - - - - - - - -  - - - - -🔹*\n*🚩|التعديل :* *"..settings.lock_edit.."*\n*🚩|الروابط :* *"..settings.lock_link.."*\n*🚩|التاك :* *"..settings.lock_tag.."*\n*🚩|الدخول :* *"..settings.lock_join.."*\n*🚩|التكرار :* *"..settings.flood.."*\n*🚩|الكلايش :* *"..settings.lock_spam.."*\n*🚩|الشارحه :* *"..settings.lock_mention.."*\n*🚩|العربيه :* *"..settings.lock_arabic.."*\n*🚩|الويب :* *"..settings.lock_webpage.."*\n*🚩|الماركدون :* *"..settings.lock_markdown.."*\n*🚩|الترحيب :* *"..settings.welcome.."*\n*🚩|التثبيت :* *"..settings.lock_pin.."*\n*🚩|البوتات :* *"..settings.lock_bots.."*\n*🚩|عدد التكرار :* *"..settings.num_msg_max.."*\n*🚩|عدد التكرار بالوقت :* *"..settings.set_char.."*\n*🚩|عدد التكرار بالاحرف :* *"..settings.time_check.."*\n*🔹- - - - - - - - - - - -  - - - - -🔹*\nCH📡 - @Ch_Advisor"
 text = string.gsub(text, 'yes', '✔️')
 text = string.gsub(text, 'no', '✖️')
 text = string.gsub(text, '0', '0')
@@ -1001,7 +1001,7 @@ if matches[1] == "ايدي" then
    if not matches[2] and not msg.reply_to_message then
 local status = getUserProfilePhotos(msg.from.id, 0, 0)
    if status.result.total_count ~= 0 then
-	sendPhotoById(msg.to.id, status.result.photos[1][1].file_id, msg.id, '🚩|ايدي المجموعه : '..msg.to.id..'\n🚩|ايديك : '..msg.from.id.. "\n🔹- - - - - - - - - - - - - - - - -🔹\n📡 ᴄʜ - @XxMTxX")
+	sendPhotoById(msg.to.id, status.result.photos[1][1].file_id, msg.id, '🚩|ايدي المجموعه : '..msg.to.id..'\n🚩|ايديك : '..msg.from.id.. "\n🔹- - - - - - - - - - - - - - - - -🔹\n📡 ᴄʜ - @Ch_Advisor")
 	else
    return "*🚩|ايدي المجموعه :*"..tostring(msg.to.id).."*🚩|ايديك :*"..tostring(msg.from.id)..""
    end
@@ -1516,7 +1516,7 @@ end
   end
   if matches[1] == "القوانين" then
  if not data[tostring(target)]['rules'] then
-     rules = "*🚩 القوانيـن :\n\n🚩|عـدم عمـل توجيه للمجموعه\n🚩|عـدم الشتـم والغلـط\n🚩|عـدم التجاوز بالكلام\n🚩|لا تطلب الادمنيه المتفاعل يرفع ادمن\n🚩|عـدم ارسـال الروابـط هنـا*\n*🔹- - - - - - - - - - - - - - - - -🔹*\n *CH - @XxMTxX*"
+     rules = "*🚩 القوانيـن :\n\n🚩|عـدم عمـل توجيه للمجموعه\n🚩|عـدم الشتـم والغلـط\n🚩|عـدم التجاوز بالكلام\n🚩|لا تطلب الادمنيه المتفاعل يرفع ادمن\n🚩|عـدم ارسـال الروابـط هنـا*\n*🔹- - - - - - - - - - - - - - - - -🔹*\n CH - @Ch_Advisor"
         else
      rules = "*🚩|القوانين :*\n\n"..data[tostring(target)]['rules']
       end
@@ -1763,7 +1763,7 @@ end
 🔹- - - - - - - - - - - - - - - - -🔹
 🚩| ارسل - اوامر المطور لعرضها
 - - - - - - - - - - -*
-CH - @XxMTxX
+CH - @Ch_Advisor
 ]]
     return text
   end
@@ -1806,7 +1806,7 @@ setChatPhoto(msg.to.id, gpPhotoFile)
  if data[tostring(msg.to.id)]['rules'] then
 rules = data[tostring(msg.to.id)]['rules']
 else
-     rules = "ℹ️ The Default Rules :\n1⃣ No Flood.\n2⃣ No Spam.\n3⃣ No Advertising.\n4⃣ Try to stay on topic.\n5⃣ Forbidden any racist, sexual, homophobic or gore content.\n➡️ Repeated failure to comply with these rules will cause ban.\n@XxMTxX"
+     rules = "ℹ️ The Default Rules :\n1⃣ No Flood.\n2⃣ No Spam.\n3⃣ No Advertising.\n4⃣ Try to stay on topic.\n5⃣ Forbidden any racist, sexual, homophobic or gore content.\n➡️ Repeated failure to comply with these rules will cause ban.\n@Ch_Advisor"
 end
 if msg.newuser.username then
 user_name = "@"..check_markdown(msg.newuser.username)
