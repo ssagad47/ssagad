@@ -1830,7 +1830,7 @@ end
  local data = load_data(_config.moderation.data)
   if not data[tostring(msg.to.id)] then
    modadd(msg)
-   send_msg(msg.to.id, '*المجمـوعه* *['..msg.to.title..']*\n *راسـل المطـور ليـتم تفعيلـها معرفه* @Sudo_Sky', msg.id, "md")
+   send_msg(msg.to.id, '*المجمـوعه* *['..msg.to.title..']*\n *راسـل المطـور ليـتم تفعيلـها معرفه* *@Sudo_Sky*', msg.id, "md")
       end 
     end
   end
