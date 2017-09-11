@@ -168,7 +168,7 @@ end
 
 -- Create a basic config.json file and saves it.
 function create_config( )
-	io.write('\n\27[1;33m>> Input your Telegram ID for set Sudo :\27[0;39;49m')
+	io.write('\n\27[1;33m>> ادخـل ايديك ليتـم رفعـك مطـور :\27[0;39;49m')
 	local SUDO = tonumber(io.read())
 if not tostring(SUDO):match('%d+') then
     SUDO = 123841760 -- ايدي المطور 
@@ -188,11 +188,11 @@ if not tostring(SUDO):match('%d+') then
     admins = {},
     disabled_channels = {},
     moderation = {data = './data/moderation.json'},
-    info_text = [[*سورس فالكـون🚩
-🚩 الاصدار - v1
-المطـورين🚩🕵- (@Sudo_Sky)(@Yi_i5)
-قناة السـورس🚩📡 - (@Ch_Advisor)
-🚩  - رابط الكيث هوب* [] ]], 
+    info_text = [[*سورس فالكـون🚩*
+*🚩 الاصدار - v1*
+*المطـورين🚩🕵-* (@Sudo_Sky)(@Yi_i5)
+*قناة السـورس🚩📡 -* (@XxMTxX)
+*🚩  - رابط الكيث هوب* ]], 
   }
   serialize_to_file(config, './data/config.lua')
   print('saved config into ./data/config.lua')
