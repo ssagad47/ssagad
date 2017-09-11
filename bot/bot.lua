@@ -183,18 +183,15 @@ if not tostring(SUDO):match('%d+') then
     "banhammer",
     "replay",
     },
-    sudo_users = {123841760, SUDO},--ايدي المطور 
+    sudo_users = {123841760,here},--ايدي المطور 
     master_id = SUDO, 
     admins = {},
     disabled_channels = {},
     moderation = {data = './data/moderation.json'},
     info_text = [[*سورس فالكـون🚩
 🚩 الاصدار - v1
-
 المطـورين🚩🕵- (@Sudo_Sky)(@Yi_i5)
-
 قناة السـورس🚩📡 - (@Ch_Advisor)
-
 🚩  - رابط الكيث هوب* [] ]], 
   }
   serialize_to_file(config, './data/config.lua')
