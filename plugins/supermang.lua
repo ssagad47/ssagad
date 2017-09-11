@@ -899,7 +899,7 @@ return "*لاتبعبص🐸💔*"
 end
 local data = load_data(_config.moderation.data)
 local mutes = data[tostring(target)]["mutes"] 
-text = "*🚩اعدادات الوسائط🌅*\n*🔹- - - - - - - - - - - - - - - - - -🔹*\n*🚩|الكل : * *"..mutes.mute_all.."*\n*🚩|المتحركه :* *"..mutes.mute_gif.."*\n*🚩|الدردشه :* *"..mutes.mute_text.."*\n*🚩|الصور :* *"..mutes.mute_photo.."*\n*🚩|الفيديو :* *"..mutes.mute_video.."*\n*🚩|الصوت :* *"..mutes.mute_audio.."*\n*🚩|الاغاني :* *"..mutes.mute_voice.."*\n*🚩|الملصقات :* *"..mutes.mute_sticker.."*\n*🚩|الجهات :* *"..mutes.mute_contact.."*\n*🚩|التوجيه :* *"..mutes.mute_forward.."*\n*🚩|الموقع :* *"..mutes.mute_location.."*\n*🚩|الملفات :* *"..mutes.mute_document.."*\n*🚩|الانلاين :* *"..mutes.mute_tgservice.."*\n*🔹- - - - - - - - - - - - - - - - - -🔹*\n📡 CH -@XxMTxX"
+text = "*🚩اعدادات الوسائط🌅*\n*🔹- - - - - - - - - - - - - - - - - -🔹*\n*🚩|الكل : * *"..mutes.mute_all.."*\n*🚩|المتحركه :* *"..mutes.mute_gif.."*\n*🚩|الدردشه :* *"..mutes.mute_text.."*\n*🚩|الصور :* *"..mutes.mute_photo.."*\n*🚩|الفيديو :* *"..mutes.mute_video.."*\n*🚩|الصوت :* *"..mutes.mute_audio.."*\n*🚩|الاغاني :* *"..mutes.mute_voice.."*\n*🚩|الملصقات :* *"..mutes.mute_sticker.."*\n*🚩|الجهات :* *"..mutes.mute_contact.."*\n*🚩|التوجيه :* *"..mutes.mute_forward.."*\n*🚩|الموقع :* *"..mutes.mute_location.."*\n*🚩|الملفات :* *"..mutes.mute_document.."*\n*🚩|الانلاين :* *"..mutes.mute_tgservice.."*\n*🔹- - - - - - - - - - - - - - - - - -🔹*\n📡 CH -@Ch_Advisor"
 text = string.gsub(text, 'yes', '✔️')
 text = string.gsub(text, 'no', '✖️')
  return text
@@ -1830,7 +1830,7 @@ end
  local data = load_data(_config.moderation.data)
   if not data[tostring(msg.to.id)] then
    modadd(msg)
-   send_msg(msg.to.id, '*المجمـوعه* *['..msg.to.title..']*\n *راسـل المطـور ليـتم تفعيلـها معرفه @Sudo_Sky*', msg.id, "md")
+   send_msg(msg.to.id, '*المجمـوعه* *['..msg.to.title..']*\n *راسـل المطـور ليـتم تفعيلـها معرفه* @Sudo_Sky', msg.id, "md")
       end 
     end
   end
