@@ -9,7 +9,7 @@
 redis-server
 
 🚩 بـعـديـن خـلـي / وانتر
-git clone 
+git clone https://github.com/DevFalcon/Falcon.git
 〰➖〰➖〰➖〰➖〰
 🚩 وراهه خـلـي هذا كود / وانتر
 
@@ -41,4 +41,4 @@ FALCON.sh
 〰➖〰➖〰➖〰➖〰
 
 🕵 - DevLoper : @Sudo_Sky
- 📍- Channel : @XxMTxX
+🚩 - Channel : @XxMTxX
