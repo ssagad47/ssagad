@@ -1676,10 +1676,6 @@ end
       end
     return about
   end
-if matches[1] == "حذف" and is_mod(msg) then
-del_msg(msg.to.id, msg.reply_id)
-del_msg(msg.to.id, msg.id)
-   end
 if matches[1] == "رفع الادمنيه" and is_owner(msg) then
 local status = getChatAdministrators(msg.to.id).result
 for k,v in pairs(status) do
