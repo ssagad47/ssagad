@@ -15,7 +15,7 @@ JSON = (loadfile "./libs/dkjson.lua")()
 serpent = (loadfile "./libs/serpent.lua")()
 require('./bot/methods')
 require('./bot/utils')
--- @vip_api
+
 function bot_run()
 	bot = nil
 	while not bot do
