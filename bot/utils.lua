@@ -182,32 +182,32 @@ function pairsByKeys (t, f)
 end
 
 function check_markdown(text) --markdown escape ( when you need to escape markdown , use it like : check_markdown('your text')
-		str = text
-		if str:match('_') then
-			output = str:gsub('_',[[\_]])
-		elseif str:match('*') then
-			output = str:gsub('*','\\*')
+		string = text
+		if string:match('_') then
+			output = string:gsub('_',[[\_]])
+		elseif string:match('*') then
+			output = string:gsub('*','\\*')
 		elseif str:match('`') then
-			output = str:gsub('`','\\`')
+			output = string:gsub('`','\\`')
 			
 		else
-			output = str
+			output = string
 		end
 	return output
 end
 
 function escape_markdown(name) --markdown escape ( only use it for name of users or groups , use it like : escape_markdown(msg.from.first_name)
   str = name
-  if str:match('_') then
-   str = str:gsub('_','')
+  if string:match('_') then
+   string = string:gsub('_','')
   end
-	if str:match('*') then
-   str = str:gsub('*','')
+	if string:match('*') then
+   string = string:gsub('*','')
   end
-	if str:match('`') then
-   str = str:gsub('`','')
+	if string:match('`') then
+   string = string:gsub('`','')
   end
- return str
+ return strin
 end
 
 function is_sudo(msg)
