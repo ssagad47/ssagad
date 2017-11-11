@@ -188,16 +188,16 @@ if not tostring(SUDO):match('%d+') then
     admins = {},
     disabled_channels = {},
     moderation = {data = './data/moderation.json'},
-    info_text = [[*سورس فالكـون🚩
+    info_text = [[*سورس قديس
 
 🚩 الاصدار - v1
 
-المطـورين🚩🕵- (@Sudo_Sky)
-(@Yi_i5)
+المطـورين🚩🕵- (@ssagad47)
+(@r_0x3)
 
-قناة السـورس🚩📡 - (@XxMTxX)
+قناة السـورس🚩📡 - (@sh_sgo)
 
-🚩  - رابط الكيث هوب* https://github.com/DevFalcon/Falcon.git ]], 
+🚩  - رابط الكيث هوب* ]], 
   }
   serialize_to_file(config, './data/config.lua')
   print('saved config into ./data/config.lua')
